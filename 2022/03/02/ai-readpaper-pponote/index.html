@@ -450,7 +450,7 @@
 <p>$$<br>\begin{aligned}<br>\underset{\theta} {maximize} \quad \hat{E}t[\frac{\pi_\theta(a_t|s_t)}{\pi{\theta_{old} }(a_t|s_t)}\hat{A_t}] \\\<br>subject; to \quad \hat{E}t\bigg[KL[\pi{\theta_{old} }(\cdot |s_t),\pi_\theta(\cdot |s_t)]\bigg]<br>\end{aligned}\tag{2}<br>$$</p>
 <p>根据(2)式可见置信域方法在策略梯度的基础上增加了约束，限制前后两个策略差异不大，而KL散度是衡量两个策略差异的。置信域方法解决了参数更新过快导致的难以收敛的问题。</p>
 <p>之后提出的TRPO改进方法，将(2)式转换为了一个无约束的优化问题：  </p>
-<p>$$<br>\underset{\theta} {maximize} \;\; \hat{E}t\bigg[\frac{\pi_\theta(a_t|s_t)} {\pi{\theta_{old} }(a_t|s_t)}\hat{A_t}-\beta KL[\pi_{\theta_{old} }(\cdot |s_t),\pi_\theta(\cdot |s_t)]\bigg]\tag{3}<br>$$</p>
+<p>$$<br>\underset{\theta} {maximize} \quad \hat{E}t\bigg[\frac{\pi_\theta(a_t|s_t)} {\pi{\theta_{old} }(a_t|s_t)}\hat{A_t}-\beta KL[\pi_{\theta_{old} }(\cdot |s_t),\pi_\theta(\cdot |s_t)]\bigg]\tag{3}<br>$$</p>
 <p>但系数 $\beta$ 的选择是一个比较困难的问题，直接选用一个固定的参数进行SGD更新的效果并不会很好。</p>
 <h2 id="Clipped-Surrogate-Objective"><a href="#Clipped-Surrogate-Objective" class="headerlink" title="Clipped Surrogate Objective"></a><strong>Clipped Surrogate Objective</strong></h2><p>对于(2)式，如果令$r_t(\theta)&#x3D;\frac{\pi_\theta(a_t |s_t)}{\pi_{\theta_{old}}}$ ,那么即可得到：   </p>
 <p>$$<br>\begin{eqnarray}L^{CPI}(\theta)&#x3D;\hat{E}t\bigg[\frac{\pi_\theta(a_t|s_t)} {\pi{\theta_{old} }(a_t|s_t)} \hat{A_t}\bigg] &#x3D; \hat{E}_t\bigg[ r_t(\theta)\hat{A_t}\bigg]\end{eqnarray}\tag{4}<br>$$</p>
