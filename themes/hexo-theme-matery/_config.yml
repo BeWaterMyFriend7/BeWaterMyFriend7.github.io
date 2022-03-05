@@ -357,17 +357,18 @@ tcaptcha:
 # To use it, activate the configuration item and set appId and appKey.
 # Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 valine:
-  enable: false
-  appId:
-  appKey:
+  enable: true
+  appId: PhEm7MALDI5knqB9a8D01ind-gzGzoHsz
+  appKey: bOiPtPgfQaHnLzgfYgoniK70
   notify: false
   verify: false
   visitor: true
-  avatar: 'mm' # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
+  avatar: monsteried
   pageSize: 10
   placeholder: 'just go go' # Comment Box placeholder
   background: /medias/comment_bg.png
-  coolpushkey: 
+  language: zh-cn
+  comment_count: true
 
 # The configuration of the MiniValine comment module is not activated by default.
 # To use it, activate the configuration item.

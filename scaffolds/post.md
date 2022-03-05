@@ -1,13 +1,15 @@
 ---
 title: {{ title }}
 date: {{ date }}
+author: 
+img: /source/images/xxx.jpg
 top: false
-cover: false
+cover: false 
 password:
 toc: true
-coverImg: 
-mathjax: true
-summary: 
+mathjax: false
+summary:
 tags: 
-categories: 
+- hexo
+categories: blog
 ---
