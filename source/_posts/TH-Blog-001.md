@@ -21,7 +21,7 @@ summary: Hexo + Github 构建个人博客
 
 [GitHub 仓库](https://github.com/BeWaterMyFriend7/BeWaterMyFriend7.github.io) 
 
-# 目录
+## 目录
 
 [Blog 搭建过程](https://bewatermyfriend7.github.io/2022/03/06/th-blog-002/)
 
@@ -31,9 +31,9 @@ summary: Hexo + Github 构建个人博客
 
 [多端同步解决](https://bewatermyfriend7.github.io/2022/03/06/th-blog-005/)
 
-# 常用命令
+## 常用命令
 
-## 常用Hexo命令
+### 常用Hexo命令
 
 ```bash
 hexo init 		#初始化本地文件夹
@@ -49,7 +49,7 @@ hexo new post "newarticlename" #新建一篇文章
 hexo new page "newpagename"   #新建一个页面
 ```
 
-## 常用npm命令
+### 常用npm命令
 
 ```bash
 npm install <pk>
@@ -61,7 +61,7 @@ npm uninstall --save <pk>
 npm list --depth=0 #列出npm安装的包
 ```
 
-# Reference
+## Reference
 
 **主要参考 :**  [知乎 godweiyang 超详细 Hexo+Github 博客搭建小白教程](https://zhuanlan.zhihu.com/p/35668237)
 

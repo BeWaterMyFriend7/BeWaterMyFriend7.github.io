@@ -23,9 +23,9 @@ password:
 
 由于下面的操作配置可能会出现失误，因此建议配置完一部分，就在本地测试一下，看看效果，以免出现错误难以定位，还得从头再来。
 
-# 主题更换
+## 主题更换
 
-## 主题推荐
+### 主题推荐
 
 https://hexo.io/themes/  
 
@@ -35,7 +35,7 @@ https://dewjohn.github.io/
 
 https://blinkfox.github.io/  
 
-## 主题下载更换
+### 主题下载更换
 
 本部分主要以**matery**主题为例进行测试说明
 
@@ -57,7 +57,7 @@ per_page : 12/18(两处)
 url : <url 你的blog地址>
 ```
 
-## 基础配置
+### 基础配置
 
 随后按照主题[说明文件](https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md)新建一系列右上角跳转页面和一些扩展功能
 
@@ -101,9 +101,9 @@ medias/featureimages 下的图片
 # 需要注意的是，一些文件夹下的图片数量如果更改，主题配置文件也需要修改，以下详细介绍
 ```
 
-# 主题优化
+## 主题优化
 
-## 文章头设置
+### 文章头设置
 
 ```bash
 #为了新建文章方便，将/scaffolds/post.md修改为如下代码：相关属性可以看主题说明文档 
@@ -125,7 +125,7 @@ categories: blog
 ---
 ```
 
-## 文章首图设置
+### 文章首图设置
 
 
 
@@ -141,7 +141,7 @@ featureImages:
 
 如果img特殊标注，那么就会按照指定路径展示文章首图
 
-## 增加社交账号信息
+### 增加社交账号信息
 
 原主题的社交账号很多不需要可以直接注释，如果想要添加主题配置文件`_config.yml`中不存在的社交账号，需要进行如下操作：
 
@@ -164,7 +164,7 @@ sociallink部分增加
 daohang： https://xydh.fun/ucas
 ```
 
-## 重新配色
+### 重新配色
 
 原来主题使用了大量的绿色，我们可以替换为自己喜欢的颜色，如果不知道渐变色如何调，可以参考 [webgradients ](https://webgradients.com/)。
 
@@ -172,7 +172,7 @@ daohang： https://xydh.fun/ucas
 
 将 `#4cbf30`  `#0f9d58 `修改为自己喜欢的颜色代码。
 
-## 首页背景轮播逻辑
+### 首页背景轮播逻辑
 
 
 
@@ -201,19 +201,19 @@ var bannerUrl = "<%- theme.jsDelivr.url %><%- url_for('/medias/banner/') %>" + x
 $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
 ```
 
-## 文章评论
+### 文章评论
 
 
 
 Matery主题默认关闭了文章评论功能，如果我们想要打开文章评论，我们需要对配置文件修改
 
-### 注册LeanCloud
+#### 注册LeanCloud
 
 注册一个 [LeanCloud账号](https://console.leancloud.cn/apps) ，实名验证后，在控制台后 **创建应用**
 
 应用创建完成后在 **设置>应用凭证** 中 获取 `App ID` 和 `AppKey`
 
-### 主题config 文件配置
+#### 主题config 文件配置
 
 `_config.yml` 中修改如下内容
 
@@ -235,7 +235,7 @@ valine:
 
 
 
-# Reference & More Reading
+## Reference & More Reading
 
 [hexo-theme-matery 主题文档](https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md)
 

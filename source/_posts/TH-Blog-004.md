@@ -20,11 +20,11 @@ password:
 
 我构建blog过程中最大的问题可能就是 图片和公式的问题，图片网页端无法加载，公式网页端无法渲染等问题，困扰了我好久。
 
-# 图片加载不出来的问题
+## 图片加载不出来的问题
 
 网上很多关于 `hexo-asset-image 、img 、for hexo5` 等系列插件，我测试后发现并不起作用。  
 
-## Hexo部分
+### Hexo部分
 
 最后是安装 `hexo-renderer-marked`插件，实验成功  
 
@@ -55,7 +55,7 @@ test.md
 test
 ```
 
-## 本地Typora设置
+### 本地Typora设置
 
 
 
@@ -83,11 +83,11 @@ test
 
 ![img](1646215788607-dcbd7b4b-a47b-457c-931b-597ec6f6d98b.png)
 
-# 公式问题
+## 公式问题
 
 首先网上很多教程说 `hexo-renderer-marked`包有问题，替换为 `hexo-renderdr-kramed`包就好了，但是有  [知乎文章](https://zhuanlan.zhihu.com/p/35668237)  说改完 `hexo-renderdr-kramed`包 会与代码高亮出现问题，因此我就没尝试，而是直接按照其所说的修改 `mark.cjs`文件
 
-## marked.cjs 文件修改
+### marked.cjs 文件修改
 
 ```javascript
 // \blog\node_modules\marked\lib\marked.cjs 
@@ -104,7 +104,7 @@ em: /^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,
 
 同时需要在  `theme\_config.yml` 文件中将 `mathjx`设置为true
 
-## md文件公式修改
+### md文件公式修改
 
 
 
@@ -118,7 +118,7 @@ em: /^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,
 
 两个`{{}}  `之间要加 空格加以区分
 
-# Reference
+## Reference
 
  [知乎 王师傅 hexo 博客如何插入图片](https://zhuanlan.zhihu.com/p/265077468)
 

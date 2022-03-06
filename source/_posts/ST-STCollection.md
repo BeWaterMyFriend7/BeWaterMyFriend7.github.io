@@ -13,13 +13,14 @@ abbrlink: 15378
 date: 2022-03-06 14:45:45
 img:
 password:
+typora-root-url: ST-STCollection
 ---
 
 文章首发于公众号 【国科大吃喝玩乐学】
 
 今天，小冰把自己压箱底的软件都整理出来了，一起分析给大家，废话不多说，上图。
 
-![img](ST-STCollection/v2-154acfa7596ef99fe54ba1206438048c_720w.jpg)
+![img](v2-154acfa7596ef99fe54ba1206438048c_720w.jpg)
 
 GitMind链接：       [软件推荐合集 ](https://gitmind.cn/app/doc/9dd3910819)
 
@@ -31,7 +32,7 @@ GitMind链接：       [软件推荐合集 ](https://gitmind.cn/app/doc/9dd39108
 
 
 
-![img](ST-STCollection/v2-54d42ba827d85405430dd6249d428772_720w.jpg)
+![img](v2-54d42ba827d85405430dd6249d428772_720w.jpg)
 
 
 
@@ -51,7 +52,7 @@ Win系统镜像下载一般选择微软官网即可，而且官网有相应的�
 
 
 
-![img](ST-STCollection/v2-ba306d828cb9aed0ac80b4b0f55dbc36_720w.jpg)
+![img](v2-ba306d828cb9aed0ac80b4b0f55dbc36_720w.jpg)
 
 
 
@@ -63,7 +64,7 @@ Win系统镜像下载一般选择微软官网即可，而且官网有相应的�
 
 ## **03 Win优化**
 
-![img](ST-STCollection/v2-1b764fd2ea8e03e7644337ac96d1cb6c_720w.jpg)
+![img](v2-1b764fd2ea8e03e7644337ac96d1cb6c_720w.jpg)
 
 
 
@@ -79,13 +80,13 @@ Win自带的文件搜索效果也不是很好，不全而且速度慢，这里�
 
 对于Win系统的美化，小冰的解决方案是T**rayS任务栏美化+全屏开始菜单+Listary搜索文件**，只在桌面放置极少图标，需要文件编辑时直接Listary搜索。
 
-![img](ST-STCollection/v2-dd1305041b6b72c22ce42b98d05f0359_720w.jpg)
+![img](v2-dd1305041b6b72c22ce42b98d05f0359_720w.jpg)
 
 ## **04 效率**
 
 
 
-![img](ST-STCollection/v2-e83a8e92f2cbc3ca8588ba1eafc773a9_720w.jpg)
+![img](v2-e83a8e92f2cbc3ca8588ba1eafc773a9_720w.jpg)
 
 效率软件这里，Quicker和Utools比较类似，都是一些插件或者动作的集合，WGestures是一款增强鼠标手势的软件，有了它，你可以鼠标划来划去去完成一定的任务。
 
@@ -93,7 +94,7 @@ Win自带的文件搜索效果也不是很好，不全而且速度慢，这里�
 
 
 
-![img](ST-STCollection/v2-25715c7f32093a77301569cce038ff88_720w.jpg)
+![img](v2-25715c7f32093a77301569cce038ff88_720w.jpg)
 
 
 
@@ -109,7 +110,7 @@ QuickLook软件可以快速预览文件内容，在微软商店即可下载，�
 
 
 
-![img](ST-STCollection/v2-7c2bfab43aa24ab779fab5040db52f51_720w.jpg)
+![img](v2-7c2bfab43aa24ab779fab5040db52f51_720w.jpg)
 
 
 
@@ -121,7 +122,7 @@ QuickLook软件可以快速预览文件内容，在微软商店即可下载，�
 
 
 
-![img](ST-STCollection/v2-99226e5e58874a222f85ab8ce0b90749_720w.jpg)
+![img](v2-99226e5e58874a222f85ab8ce0b90749_720w.jpg)
 
 
 
@@ -133,7 +134,7 @@ QuickLook软件可以快速预览文件内容，在微软商店即可下载，�
 
 
 
-![img](ST-STCollection/v2-0535176aa2e23a24232b9adef0b92118_720w.jpg)
+![img](v2-0535176aa2e23a24232b9adef0b92118_720w.jpg)
 
 
 
