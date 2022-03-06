@@ -1,8 +1,8 @@
 ---
 title: {{ title }}
 date: {{ date }}
-author: 
-img: /source/images/xxx.jpg
+author: BeWater
+img: 
 top: false
 cover: false 
 password:
@@ -12,4 +12,5 @@ summary:
 tags: 
 - hexo
 categories: blog
+typora-root-url: {{ title }}
 ---

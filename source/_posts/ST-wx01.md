@@ -307,11 +307,11 @@ Zotero还**支持安装插件**，可以在Github上搜索就可以看到相关�
 
 Citavi 是一个**文献管理与知识组织**软件，其不仅仅局限于文献管理，更方便知识管理，书写论文。其在官网挂上了多款文献管理软件功能的比较
 
-[常用的几款文献管理软件 Citavi 、Mendely、Endnote、Refworks、Zotero、Papers 功能大比拼！哪个最好用？www.softhead-citavi.com/blog/2314![img](https://pic1.zhimg.com/v2-88f26d6a741bfda348deec1021725150_180x120.jpg)](https://www.softhead-citavi.com/blog/2314)
+[常用的几款文献管理软件 Citavi 、Mendely、Endnote、Refworks、Zotero、Papers 功能大比拼！哪个最好用？](https://www.softhead-citavi.com/blog/2314)
 
 从而可以看出其实力不容小视。官网链接：
 
-[Citavi（西塔维）中文网站丨文献管理与知识组织软件www.softhead-citavi.com/![img](https://pic1.zhimg.com/v2-efe22dcdb1c6a6300b3e5d6be8bb6e14_ipico.jpg)](https://www.softhead-citavi.com/)
+[Citavi（西塔维）](https://www.softhead-citavi.com/)
 
 免费空间每个project上限100条文献。
 
