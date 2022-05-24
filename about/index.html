@@ -30,7 +30,7 @@
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.1"></head>
+<meta name="generator" content="Hexo 6.2.0"></head>
 
 
 
@@ -311,7 +311,7 @@
     //var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
     //$('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
     // 随机切换
-    //$('.bg-cover').css('background-image', 'url(/medias/featureimages/5.jpg)');
+    //$('.bg-cover').css('background-image', 'url(/medias/featureimages/3.jpg)');
     var x = Math.floor(Math.random() * 8);
     var bannerUrl = "/medias/banner/" + x + '.jpg';
     $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
@@ -508,7 +508,7 @@
         },
         xAxis: {
             type: 'category',
-            data: ["2021-03","2021-04","2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03"]
+            data: ["2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04","2022-05"]
         },
         yAxis: {
             type: 'value',
@@ -518,7 +518,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,0,25],
+                data: [0,0,0,0,0,0,0,0,0,0,25,0,0],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -560,7 +560,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"刷题笔记","value":7},{"name":"AI","value":3},{"name":"随笔","value":4},{"name":"软件","value":6},{"name":"编程技术","value":5}],
+                data: [{"name":"AI","value":3},{"name":"随笔","value":4},{"name":"软件","value":6},{"name":"编程技术","value":5},{"name":"刷题笔记","value":7}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,

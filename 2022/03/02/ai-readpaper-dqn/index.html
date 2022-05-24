@@ -30,7 +30,7 @@
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.1"></head>
+<meta name="generator" content="Hexo 6.2.0"></head>
 
 
 
@@ -463,10 +463,10 @@
 <li>将$&lt;s,a,s’,r,done&gt;$存储到回放区Mermory中。</li>
 <li>更新状态s。</li>
 </ol>
-<h3 id="ε-greedy策略-4"><a href="#ε-greedy策略-4" class="headerlink" title="ε-greedy策略**[4]"></a>ε-greedy策略**[<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/425843648#ref_4">4]</a></h3><p>$\epsilon-greedy$策略即有$\epsilon$的概率采取随机策略，$1-\epsilon$ 概率选择贪婪策略，公式如下：<br>$$<br>\pi(a|s) &#x3D; \begin{cases} \epsilon&#x2F;m + 1-\epsilon \qquad if \; a^* &#x3D; argmax_{a\in A} Q(s,a)\\\\ \epsilon&#x2F;m \qquad otherwise \end{cases}\tag{1}<br>$$</p>
+<h3 id="ε-greedy策略-4"><a href="#ε-greedy策略-4" class="headerlink" title="ε-greedy策略**[4]"></a>ε-greedy策略**[<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/425843648#ref_4">4]</a></h3><p>$\epsilon-greedy$策略即有$\epsilon$的概率采取随机策略，$1-\epsilon$ 概率选择贪婪策略，公式如下：<br>$$<br>\pi(a|s) &#x3D; \begin{cases} \epsilon&#x2F;m + 1-\epsilon \qquad if ; a^* &#x3D; argmax_{a\in A} Q(s,a)\\ \epsilon&#x2F;m \qquad otherwise \end{cases}\tag{1}<br>$$</p>
 <p>其中 m为动作个数，<strong>推导过程</strong>如下：</p>
 <p>如果采用随机策略，那么<br>$$<br>\pi_{rand}(a|s) &#x3D; 1&#x2F;m\tag{2}<br>$$</p>
-<p>如果采用贪婪策略，那么<br>$$<br>\pi_{greedy}(a|s) &#x3D; \begin{cases}  1 \qquad if \; a^* &#x3D; argmax_{a\in A} Q(s,a)\\\\ 0 \qquad otherwise \end{cases}\tag{3}<br>$$</p>
+<p>如果采用贪婪策略，那么<br>$$<br>\pi_{greedy}(a|s) &#x3D; \begin{cases}  1 \qquad if ; a^* &#x3D; argmax_{a\in A} Q(s,a)\\ 0 \qquad otherwise \end{cases}\tag{3}<br>$$</p>
 <p>那么$\epsilon-greedy$策略为：<br>$$<br>\pi(a|s) &#x3D; (1-\epsilon)\cdot \pi_{greedy}(a|s) +\epsilon\cdot \pi_{rand}(a|s)\tag{4}<br>$$</p>
 <p>将式（2）（3） 代入式（4）即可得到式（1）。</p>
 <p><strong>具体实现</strong>：即给定一个随机数rand，如果随机数大于$\epsilon$,那么动作使用PolicyNet得到的q_v中的最大值对应的动作a，如果随机数小于 $\epsilon$,那么随机选择动作a。一般 $\epsilon$ 在训练过程中逐渐下降，即开始侧重于探索，最后侧重于利用。</p>
@@ -478,13 +478,13 @@
 <li>将S’给到TargetNet网络，得到Q_n_batch，对于每一个$s’\in S’$ ,在对应中的Q_n_batch中寻找最大的值，从而得到q_nv，即公式$max_{a’} \hat{Q}(\phi_{j+1},a’;\theta^-)$的实现。这部分对应图中黄色部分。</li>
 <li>接下来是公式(5)的实现\</li>
 </ol>
-<p>$$<br>y_j &#x3D; \begin{cases} r_j \qquad if \; episode\; terminates\\\\ r_j+\gamma max_{a’} \hat{Q}(\phi_{j+1},a’;\theta)\qquad otherwise\end{cases}\tag{5}<br>$$</p>
+<p>$$<br>y_j &#x3D; \begin{cases} r_j \qquad if ; episode; terminates\\ r_j+\gamma max_{a’} \hat{Q}(\phi_{j+1},a’;\theta)\qquad otherwise\end{cases}\tag{5}<br>$$</p>
 <p>EasyRL用式（6）代替(5)式，实现上更加简单。<br>$$<br>y_j &#x3D;  r_j+\gamma max_{a’} \hat{Q}(\phi_{j+1},a’;\theta)(1-done)\tag{6}<br>$$</p>
 <p>这部分的实现也就是红色的部分（不包括Loss），最终得到目标Q值q_t（ $y_j$ ）.</p>
 <p>\5. 最后就是熟悉的计算Loss环节，利用反向传播对PolicyNet的参数进行更新。那么TargetNet的参数什么时候更新呢，当PolicyNet更新n次后将其参数直接拷贝到TargetNet中，n是我们设置的参数。这样就要求TargetNet与PolicyNet的结构完全一致。</p>
 <h3 id="整体架构"><a href="#整体架构" class="headerlink" title="整体架构"></a>整体架构</h3><p><img src="/2022/03/02/ai-readpaper-dqn/v2-edd59af108f9c574f509c43dd3fa8666_r.jpg" alt="图4">图4</p>
 <p>将图2和图3结合就得到了图4，为了美观，部分线条做了简化。图3呈现了完整的NatureDQN的训练流程。</p>
-<h2 id="Double-DQN"><a href="#Double-DQN" class="headerlink" title="Double DQN"></a>Double DQN</h2><p>Double DQN[<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/425843648#ref_5">5]</a>与Nature DQN的区别就一个公式：<br>$$<br>y_t^{DQN} \equiv R_{t+1} + \gamma max_a \hat{Q}(s_{t+1},a;\theta_t^-)\\\<br>y_t^{Double DQN} \equiv R_{t+1} + \gamma \hat{Q}(s_{t+1},argmax_a Q(s_{t+1},a;\theta_t);\theta_t^-)\<br>$$</p>
+<h2 id="Double-DQN"><a href="#Double-DQN" class="headerlink" title="Double DQN"></a>Double DQN</h2><p>Double DQN[<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/425843648#ref_5">5]</a>与Nature DQN的区别就一个公式：<br>$$<br>y_t^{DQN} \equiv R_{t+1} + \gamma max_a \hat{Q}(s_{t+1},a;\theta_t^-)\\<br>y_t^{Double DQN} \equiv R_{t+1} + \gamma \hat{Q}(s_{t+1},argmax_a Q(s_{t+1},a;\theta_t);\theta_t^-)\<br>$$</p>
 <p>Nature DQN对于状态$s_{t+1}$下的动作选择为，在TargetNet中的最大Q值对应的动作a，因此得到的Q值为$max_a \hat{Q}(s_{t+1},a;\theta_t^-)$；</p>
 <p>DoubleDQN对于状态$s_{t+1}$下的动作选择为，在PolicyNet中最大Q值对应的动作a，因此得到的动作为 $a’&#x3D;argmax_a \hat{Q}(s_{t+1},a;\theta_t)$，那么对应的Q值为：<br>$$<br>\hat{Q}(s_{t+1},a’;\theta_t^-)&#x3D;\hat{Q}(s_{t+1},argmax_a \hat{Q}(s_{t+1},a;\theta_t);\theta_t^-)\tag{7}<br>$$</p>
 <p>因此DoubleDQN的网络更新部分图如图5所示。</p>

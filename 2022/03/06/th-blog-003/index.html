@@ -30,7 +30,7 @@
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.1"></head>
+<meta name="generator" content="Hexo 6.2.0"></head>
 
 
 
@@ -467,7 +467,7 @@ url <span class="token builtin class-name">:</span> <span class="token operator"
 
 <h3 id="基础配置"><a href="#基础配置" class="headerlink" title="基础配置"></a>基础配置</h3><p>随后按照主题<a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md">说明文件</a>新建一系列右上角跳转页面和一些扩展功能</p>
 <p>在该主题文件下的配置文件<code>_config.yml</code>进行属性修改</p>
-<pre class="line-numbers language-html" data-language="html"><code class="language-html">blog/themes/hexo-theme-matery/_config.yml
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">blog/themes/hexo-theme-matery/_config.yml
 
 menu部分：
 	#见不需要未新建跳转页面的直接注释
@@ -520,7 +520,7 @@ categories: blog
 
 <h3 id="文章首图设置"><a href="#文章首图设置" class="headerlink" title="文章首图设置"></a>文章首图设置</h3><p>img 表示文章的首图，默认不特殊标注</p>
 <p>此时会从主题文件下的 <code>source\media\featureimages</code>文件夹下，此文件夹下有0-23 一共24张图片，我们可以更换为我们自己喜欢的图片，如果你要更改其图片数量，需要在主题文件的 <code>_config.yml</code>文件下进行更改：</p>
-<pre class="line-numbers language-html" data-language="html"><code class="language-html">featureImages:
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">featureImages:
 # 在下面进行更改文件名称
 - /medias/featureimages/0.jpg<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
@@ -535,7 +535,7 @@ categories: blog
 <span class="token operator">&lt;</span>% <span class="token punctuation">&#125;</span> %<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>主题文件夹的配置文件<code>_config.yml</code>中</p>
-<pre class="line-numbers language-html" data-language="html"><code class="language-html">sociallink部分增加
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">sociallink部分增加
 daohang： https://xydh.fun/ucas<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <h3 id="重新配色"><a href="#重新配色" class="headerlink" title="重新配色"></a>重新配色</h3><p>原来主题使用了大量的绿色，我们可以替换为自己喜欢的颜色，如果不知道渐变色如何调，可以参考 <a target="_blank" rel="noopener" href="https://webgradients.com/">webgradients </a>。</p>
@@ -566,7 +566,7 @@ daohang： https://xydh.fun/ucas<span aria-hidden="true" class="line-numbers-row
 <h4 id="注册LeanCloud"><a href="#注册LeanCloud" class="headerlink" title="注册LeanCloud"></a>注册LeanCloud</h4><p>注册一个 <a target="_blank" rel="noopener" href="https://console.leancloud.cn/apps">LeanCloud账号</a> ，实名验证后，在控制台后 <strong>创建应用</strong></p>
 <p>应用创建完成后在 <strong>设置&gt;应用凭证</strong> 中 获取 <code>App ID</code> 和 <code>AppKey</code></p>
 <h4 id="主题config-文件配置"><a href="#主题config-文件配置" class="headerlink" title="主题config 文件配置"></a>主题config 文件配置</h4><p><code>_config.yml</code> 中修改如下内容</p>
-<pre class="line-numbers language-html" data-language="html"><code class="language-html">valine:
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">valine:
   enable: true
   appId: <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>刚才获取的APPID</span><span class="token punctuation">></span></span>
   appKey: <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>刚才获取的APPKey</span><span class="token punctuation">></span></span>
